@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="">
+        <form id="js-breakfast-form">
+            <div class="form-field">
+                <div class="">
+                    <label for="content">Add something to the breakfast menu</label>
+                </div>
+    
+                <input type="text" id="content" name="content" placeholder="Something...">
+            </div>
+
+            <div class="form-field">
+                <div class="">
+                    <label for="price">Price</label>
+                </div>
+    
+                <input type="number" id="price" name="price" placeholder="$">
+            </div>
+    
+            <div class="form-field">
+                <div class="">
+                    <label for="day">Choose a day:</label> 
+                </div>
+    
+                <select name="day" id="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+    
+            <div class="form-field">
+                <input type="submit" value="Add">
+            </div>
+
+            <div class="form-field">
+                <p id="js-form-status"></p>
+            </div>
+          </form>  
+    </section>
+
+    <section id="js-breakfast-menu"></section>
+</body>
+</html>
+
+<script src="main.js"></script>
